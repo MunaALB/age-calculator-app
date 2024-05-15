@@ -1,0 +1,72 @@
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: $white;
+  width: 20rem;
+  height: 15.3rem;
+  border-radius: 0.7rem 0.7rem 4rem 0.7rem;
+  padding: 0.6rem 1.3rem;
+
+  .inputs {
+    display: flex;
+    margin-bottom: 1.3rem;
+    .input-wrapper {
+      margin-right: 0.7rem;
+    }
+    label {
+      text-transform: uppercase;
+      letter-spacing: 0.08rem;
+      font-size: 12px;
+      color: $smokey-grey;
+    }
+
+    input {
+      display: block;
+      width: 4rem;
+      height: 1.7rem;
+      border: 0.06rem solid $light-grey;
+      caret-color: $primary-purple;
+      border-radius: 0.2rem;
+      box-shadow: none;
+      padding: 0rem 0.5rem;
+      font-weight: 700;
+      font-size: 18px;
+
+      &:focus {
+        outline-color: transparent;
+        border: 0.04rem solid $primary-purple;
+      }
+      &:focus-visible {
+        outline: none;
+      }
+    }
+  }
+
+  .action {
+    position: relative;
+
+    hr {
+      border: 0.5px solid $light-grey;
+    }
+  }
+
+  .results {
+    margin-top: 1.2rem;
+    p {
+      line-height: 1.1;
+      font-family: $font-family;
+      font-size: 2.3rem;
+      font-weight: 800;
+      font-style: italic;
+      color: $off-black;
+    }
+    span {
+      color: $primary-purple;
+    }
+  }
+}

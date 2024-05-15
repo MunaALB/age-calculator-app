@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 30px;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: hsl(0, 0%, 94%);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  width: 20rem;
+  height: 15.3rem;
+  border-radius: 0.7rem 0.7rem 4rem 0.7rem;
+  padding: 0.6rem 1.3rem;
+}
+.card .inputs {
+  display: flex;
+  margin-bottom: 1.3rem;
+}
+.card .inputs .input-wrapper {
+  margin-right: 0.7rem;
+}
+.card .inputs label {
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  font-size: 12px;
+  color: hsl(0, 1%, 44%);
+}
+.card .inputs input {
+  display: block;
+  width: 4rem;
+  height: 1.7rem;
+  border: 0.06rem solid hsl(0, 0%, 86%);
+  caret-color: hsl(259, 100%, 65%);
+  border-radius: 0.2rem;
+  box-shadow: none;
+  padding: 0rem 0.5rem;
+  font-weight: 700;
+  font-size: 18px;
+}
+.card .inputs input:focus {
+  outline-color: transparent;
+  border: 0.04rem solid hsl(259, 100%, 65%);
+}
+.card .inputs input:focus-visible {
+  outline: none;
+}
+.card .action {
+  position: relative;
+}
+.card .action hr {
+  border: 0.5px solid hsl(0, 0%, 86%);
+}
+.card .results {
+  margin-top: 1.2rem;
+}
+.card .results p {
+  line-height: 1.1;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.3rem;
+  font-weight: 800;
+  font-style: italic;
+  color: hsl(0, 0%, 8%);
+}
+.card .results span {
+  color: hsl(259, 100%, 65%);
+}
+
+.icon-arrow {
+  background: url("../image/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: cover; /* stretch the background to cover the whole element */
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+}
+
+.btn {
+  background-color: hsl(259, 100%, 65%);
+  width: 2.3rem;
+  height: 2.3rem;
+  border: none;
+  border-radius: 2rem;
+  position: absolute;
+  top: -35px;
+  right: 0;
+}

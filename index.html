@@ -1,13 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Age Calculator</title>
-</head>
-<body>
+    <link href="./css/main.css" rel="stylesheet" />
+  </head>
+  <body>
     <section>
-        
+      <div class="card">
+        <div class="inputs">
+          <div class="input-wrapper day-input">
+            <label>day</label>
+            <input type="text" placeholder="DD" />
+          </div>
+          <div class="input-wrapper month-input">
+            <label>month</label>
+            <input type="text" placeholder="MM" />
+          </div>
+          <div class="input-wrapper year-input">
+            <label>year</label>
+            <input type="text" placeholder="YYYY" />
+          </div>
+        </div>
+        <div class="action">
+          <hr />
+          <button class="btn btn-primary"><i class="icon-arrow"></i></button>
+        </div>
+        <div class="results">
+            <p>
+                <span>- -</span>
+                years
+            </p>
+            <p>
+                <span>- -</span>
+                months
+            </p>
+            <p>
+                <span>- -</span>
+                days
+            </p>
+        </div>
+      </div>
     </section>
-</body>
+  </body>
 </html>
